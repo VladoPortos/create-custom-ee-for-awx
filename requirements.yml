@@ -1,0 +1,18 @@
+---
+collections:
+  - community.crypto
+  - community.general
+  - community.zabbix
+  - community.vmware
+  - vmware.vmware_rest
+  - community.mysql
+  - community.postgresql
+  - community.kubernetes
+  - community.docker
+  - ansible.windows
+  - community.windows
+  - community.hashi_vault
+  - community.aws
+  - amazon.aws
+  - git+https://github.com/vmware/ansible-for-nsxt
+  - netapp.ontap

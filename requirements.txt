@@ -1,0 +1,16 @@
+pyvmomi
+jmespath
+zabbix-api
+psycopg2-binary
+cryptography
+openshift>=0.6.2
+requests-oauthlib
+docker
+urllib3
+pywinrm
+hvac
+boto3
+botocore
+jmespath
+aiohttp
+PyMySQL
