@@ -7,8 +7,8 @@ USER root
 ADD requirements.yml /tmp/requirements.yml
 ADD requirements.txt /tmp/requirements.txt
 
-# upgrade pip
-RUN /usr/bin/python3 -m pip install --upgrade pip
+# make sure the pip is there and upgrade it
+RUN /usr/bin/python3 -m ensurepip && /usr/bin/python3 -m pip install --upgrade pip
 
 # install Ansible Galaxy collections
 RUN ansible-galaxy collection install -r /tmp/requirements.yml --collections-path /usr/share/ansible/collections
