@@ -14,7 +14,7 @@ RUN /usr/bin/python3 -m ensurepip && /usr/bin/python3 -m pip install --upgrade p
 RUN ansible-galaxy collection install -r /tmp/requirements.yml --collections-path /usr/share/ansible/collections
 
 # install Python dependencies
-RUN pip install -r /tmp/requirements.txt
+RUN /usr/bin/python3 -m pip install -r /tmp/requirements.txt
 
 # Add system dependencies
 RUN dnf install -y mysql lftp && dnf clean all
